@@ -1,0 +1,38 @@
+page-home {
+
+  ion-slides {
+
+    max-height: 25%;
+
+    .swiper-container {
+
+      border-radius: 15px;
+      background-color: color($colors, mefo-red);
+      box-shadow: 0px 2px 1px #00000052;
+      color: color($colors, mefo-white);
+
+    }
+
+    .swiper-pagination-bullet-active {
+
+      background: color($colors, mefo-white);
+
+    }
+
+    ion-slide {
+
+      height: 100%;
+      width: auto;
+
+      img {
+
+        height: 100%;
+        widows: auto;
+
+      }
+
+    }
+
+  }
+
+}
