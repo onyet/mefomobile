@@ -35,4 +35,65 @@ page-home {
 
   }
 
+  .category-item {
+
+    ion-col {
+
+      img {
+
+        width: 100%;
+        height: auto;
+
+      }
+
+    }
+
+  }
+
+  .populer-item {
+
+    ion-col {
+
+      border: 1px solid color($colors, light);
+
+    }
+
+  }
+
+  .product-list {
+
+    ion-row {
+
+      ion-col {
+
+        border: 1px solid color($colors, light);
+
+        img {
+
+          width: 100%;
+          min-height: 120px;
+          display: inline-block;
+          margin-bottom: 10px;
+
+        }
+
+        h6 {
+
+          margin-bottom: 5px;
+          overflow: hidden;
+
+        }
+
+        p {
+
+          margin-top: 0px;
+
+        }
+
+      }
+
+    }
+
+  }
+
 }
