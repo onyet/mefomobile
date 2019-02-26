@@ -14,6 +14,17 @@
 
 <ion-content padding>
 
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  
+  </ion-refresher>
+
   <ion-slides autoplay="4000" loop pager margin-bottom>
 
     <ion-slide>
@@ -96,7 +107,7 @@
 
   </div>
 
-  <div margin-vertical padding-top>
+  <div margin-vertical>
 
     <h3 ion-text color="mefo-black">Populer <ion-icon name="ios-bonfire" float-right color="mefo-red"></ion-icon></h3>
 
@@ -207,5 +218,15 @@
     </ion-grid>
 
   </div>
+
+  <!-- Infinity Scroll Event -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Memuat item...">    
+    </ion-infinite-scroll-content>
+  
+  </ion-infinite-scroll>
 
 </ion-content>
